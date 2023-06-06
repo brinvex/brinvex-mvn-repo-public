@@ -130,7 +130,7 @@
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.8.1</version>
                 <configuration>
-                    <altDeploymentRepository>internal.repo::default::file://${user.dir}/tmp-target-mvn-repo</altDeploymentRepository>
+                    <altDeploymentRepository>internal.repo::default::file://${user.dir}/target/mvn-repo</altDeploymentRepository>
                 </configuration>
             </plugin>
             <plugin>
@@ -156,7 +156,7 @@
                     <!-- disable webpage processing -->
                     <noJekyll>true</noJekyll>
                     <!-- matches distribution management repository url above -->
-                    <outputDirectory>${user.dir}/tmp-target-mvn-repo</outputDirectory>
+                    <outputDirectory>${user.dir}/target/mvn-repo</outputDirectory>
                     <!-- remote branch name -->
                     <branch>refs/heads/main</branch>
                     <includes><include>**/*</include></includes>
